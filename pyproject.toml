@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colab-universal-rename-tool"
+version = "1.0.0"
+description = "Universal batch rename tool for Google Colab and local Python."
+requires-python = ">=3.9"
+dependencies = [
+  "pandas",
+  "openpyxl",
+  "ipywidgets",
+  "requests",
+  "gradio",
+]
+
+[tool.setuptools.packages.find]
+include = ["universal_rename_tool*"]
